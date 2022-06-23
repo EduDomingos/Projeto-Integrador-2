@@ -644,8 +644,8 @@ footer .social-links {
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas:
-    'A B'
-    'C C';
+      'A B'
+      'C C';
   }
 
   #home .col-a {
@@ -701,7 +701,7 @@ footer .social-links {
     width: 30%;
     flex-grow: 1;
   }
-  
+
   /*====================About====================*/
   #about .wrapper {
     grid-template-columns: 48rem 1fr;
@@ -747,6 +747,6 @@ footer .social-links {
   }
 
   footer p {
-    margin-bottom: 0;    
+    margin-bottom: 0;
   }
 }
