@@ -1,6 +1,5 @@
-window.addEventListener('scroll', onScroll)
+window.document.addEventListener('scroll', onScroll)
 
-onScroll()
 
 function onScroll() {
   showNavOnScroll()
@@ -8,7 +7,6 @@ function onScroll() {
 
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
-  activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
 
 }
@@ -40,10 +38,11 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  const nav = window.document.getElementById('navigation')
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    nav.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    nav.classList.remove('scroll')
   }
 }
 
